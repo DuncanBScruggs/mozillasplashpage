@@ -5,32 +5,38 @@ html {
 
 body {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: white;
     position: relative;
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    margin: 2em;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+    body {
+        margin: 2em auto;
+        max-width: 1000px;
+    }
 }
 
 
 /* Header styling */
 
 header {
-    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 header img {
-    width: 100px;
-    position: absolute;
-    right: 32.5px;
-    top: 32.5px;
+    width: 120px;
+    height: 90px;
 }
 
 h1 {
     font-size: 50px;
-    line-height: 140px;
-    margin: 0 0 0 32.5px;
+    margin: 0;
     font-style: italic;
     color: #373fff;
 }
